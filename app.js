@@ -1,5 +1,5 @@
 /**
- * Hide element
+ * Hide/unhide element
  * @argument {object} item
  */
 const toggleHide = (item)=>{
