@@ -19,7 +19,7 @@ const toggleHide = (item)=>{
  }
  
 /**
- * Get element random location
+ * Set element random location
  * @argument {object} item
  */
 const setReandomLocation = (item) => {
