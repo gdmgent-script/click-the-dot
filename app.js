@@ -11,10 +11,10 @@ const toggleHide = (item)=>{
  * Get element random location
  * @return {array} [left ,top]
  */
- const getRandomLocation = ()=>{
+ const getRandomLocation = (item)=>{
     //get canvas width and height
-     const cw = window.innerWidth;
-     const ch = window.innerHeight;
+     const cw = window.innerWidth - item.offsetWidth;
+     const ch = window.innerHeight - item.offsetHeight;
      return [Math.floor(Math.random() * cw), Math.floor(Math.random() * ch)];
  }
  
@@ -24,7 +24,7 @@ const toggleHide = (item)=>{
  */
 const setReandomLocation = (item) => {
     //get random location within viewport
-    const dotLocation = getRandomLocation();
+    const dotLocation = getRandomLocation(item);
     item.style.left = dotLocation[0]+'px';
     item.style.top = dotLocation[1]+'px';
  }
