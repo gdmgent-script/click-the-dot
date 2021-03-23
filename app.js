@@ -12,7 +12,7 @@ const toggleHide = (item)=>{
  * @return {array} [left ,top]
  */
  const getRandomLocation = (item)=>{
-    //get canvas width and height
+    //get canvas width and height minus item-size
      const cw = window.innerWidth - item.offsetWidth;
      const ch = window.innerHeight - item.offsetHeight;
      return [Math.floor(Math.random() * cw), Math.floor(Math.random() * ch)];
